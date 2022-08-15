@@ -9,7 +9,10 @@ output:
     toc_depth: 2
     toc_float: true
     code_download: true
+editor_options: 
+  chunk_output_type: console
 ---
+
 Hamermesh and Parker (2005) data on student evaluations of
 instructors’ beauty and teaching quality for several courses at the
 University of Texas. See Chapter 10 in Regression and Other
@@ -29,8 +32,6 @@ knitr::opts_chunk$set(message=FALSE, error=FALSE, warning=FALSE, comment=NA)
 #### Load packages
 
 ```{r }
-library("rprojroot")
-root<-has_file(".ROS-Examples-root")$make_fix_file()
 library("rstanarm")
 library("ggplot2")
 library("bayesplot")
@@ -40,7 +41,7 @@ theme_set(bayesplot::theme_default(base_family = "sans"))
 #### Load data
 
 ```{r }
-beauty <- read.csv(root("Beauty/data","beauty.csv"))
+beauty <- read.csv("Beauty/data/beauty.csv")
 head(beauty)
 ```
 
