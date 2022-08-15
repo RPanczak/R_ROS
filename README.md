@@ -28,3 +28,7 @@ You can get the list of data sets with
 ## Index and notebooks in html
 
 For easier viewing the index and the notebooks in html are available at [avehtari.github.io/ROS-Examples](https://avehtari.github.io/ROS-Examples/).
+
+## `brms` version 
+
+Repo [here](https://github.com/ASKurz/Working-through-Regression-and-other-stories).  
